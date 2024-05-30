@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
                 arrcontacts.add(new Contact_model(namee, numberr));
                 adapter.notifyItemInserted(arrcontacts.size() - 1);
                 recyclerView.scrollToPosition(arrcontacts.size() - 1);
-
+                dialog.dismiss();
             });
             dialog.show();
 
